@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_DogArmorWithHelmetVest</defName>
+    <label>dog armor full vest</label>
+    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Animal/Apparel/Body/dogarmorvestwh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0.5</Flammability>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.3</ArmorRating_Heat>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>UpperHead</li>
+		<li>Legs</li>
+		<li>FrontLeftPaw</li>
+		<li>FrontRightPaw</li>
+		<li>FrontLeftLeg</li>
+		<li>FrontRightLeg</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Animal/Apparel/Body/dogarmorvestwh</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Animal</li>
+        <li>LabradorRetriever</li>
+      </tags>
+		<defaultOutfitTags>
+			<li>Armor</li>
+			<li>Protective</li>
+		</defaultOutfitTags>
+		
+    </apparel>
+	<tradeTags>
+			<li>Armor</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_DogSylo</defName>
+    <label>dog sylo</label>
+    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <techLevel>Archotech</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>ReconArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Animal/Apparel/Body/dogsylo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.3</Flammability>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>20</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>10</Plasteel>
+      <Uranium>5</Uranium>	  
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+		<li>FullHead</li>
+		<li>Legs</li>
+		<li>FrontLeftPaw</li>
+		<li>FrontRightPaw</li>
+		<li>FrontLeftLeg</li>
+		<li>FrontRightLeg</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Animal/Apparel/Body/dogsylo</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Animal</li>
+        <li>LabradorRetriever</li>
+      </tags>
+		<defaultOutfitTags>
+			<li>Armor</li>
+			<li>Protective</li>
+		</defaultOutfitTags>
+		
+    </apparel>
+	<tradeTags>
+			<li>Armor</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</Defs>
