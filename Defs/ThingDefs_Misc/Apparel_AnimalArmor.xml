@@ -121,7 +121,7 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
-	  <CarryingCapacity>2</CarryingCapacity>
+	  <CarryingCapacity>25</CarryingCapacity>
     </equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
@@ -216,8 +216,8 @@
       <RestRateMultiplier>0.5</RestRateMultiplier>
       <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
       <InjuryHealingFactor>5</InjuryHealingFactor>
-	  <!--totalBleedFactor>0.75</totalBleedFactor-->
 	  <MeleeDodgeChance>15</MeleeDodgeChance>
+	  <MeleeHitChance>15</MeleeHitChance>
     </equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
