@@ -3,8 +3,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_DogArmorWithHelmetVest</defName>
-    <label>dog armor full vest</label>
-    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <label>Full dog armor</label>
+    <description>Vest, simple helmet and paw pads. Protects slightly better than a regular plate, thanks to better steel.</description>
     <techLevel>Industrial</techLevel>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -92,8 +92,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_DogSylo</defName>
-    <label>dog sylo</label>
-    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <label>Power dog armor</label>
+    <description>Power armor with servos. It gives not only better protection from all kinds of damage, but also protects the neck, eyes and other vulnerable places. Unfortunately, it is not possible to place the tail under the armor. Strongly reduces the speed of traveling, but allows you to carry more cargo.</description>
     <techLevel>Archotech</techLevel>
     <recipeMaker>
       <researchPrerequisite>ReconArmor</researchPrerequisite>
@@ -113,14 +113,14 @@
       <Mass>15</Mass>
       <Flammability>0.3</Flammability>
       <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
+      <ArmorRating_Sharp>1.40</ArmorRating_Sharp>
       <ArmorRating_Heat>0.6</ArmorRating_Heat>
       <Insulation_Cold>5</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>20</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.25</MoveSpeed>
+      <MoveSpeed>-0.35</MoveSpeed>
 	  <CarryingCapacity>25</CarryingCapacity>
     </equippedStatOffsets>
     <thingCategories>
@@ -184,8 +184,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_DogNanoSuit</defName>
-    <label>dog NanoSuit</label>
-    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <label>Dog nanosuit</label>
+    <description>Thanks to the latest developments in the field of mechanites, we have been able to design a dog suit that, when put on, quickly integrates into the blood and nervous system of the wearer, becoming virtually a second layer of muscle. When fused with the circulatory system, it begins to produce mechanites that greatly increase the wearer's regenerative abilities. Allows the wearer to increase physical abilities while providing incredible protection.</description>
     <techLevel>Archotech</techLevel>
     <recipeMaker>
       <researchPrerequisite>UltraMechtech</researchPrerequisite>
@@ -205,7 +205,7 @@
       <Mass>5</Mass>
       <Flammability>0.1</Flammability>
       <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
       <ArmorRating_Heat>1.1</ArmorRating_Heat>
       <Insulation_Cold>15</Insulation_Cold>
       <Insulation_Heat>15</Insulation_Heat>
