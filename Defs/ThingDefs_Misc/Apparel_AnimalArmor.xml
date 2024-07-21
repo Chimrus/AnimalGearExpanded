@@ -121,6 +121,7 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.25</MoveSpeed>
+	  <CarryingCapacity>2</CarryingCapacity>
     </equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
@@ -179,6 +180,101 @@
         </li>
       </options>
     </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_DogNanoSuit</defName>
+    <label>dog NanoSuit</label>
+    <description>A vest with armor plates inserted on the chest and back. Protects against gunfire. Labrador Retriever</description>
+    <techLevel>Archotech</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>UltraMechtech</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Animal/Apparel/Body/dogNanoSuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>250000</WorkToMake>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.1</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>2.5</MoveSpeed>
+      <RestRateMultiplier>0.5</RestRateMultiplier>
+      <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+      <InjuryHealingFactor>5</InjuryHealingFactor>
+	  <!--totalBleedFactor>0.75</totalBleedFactor-->
+	  <MeleeDodgeChance>15</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <Hyperweave>400</Hyperweave>
+      <Plasteel>150</Plasteel>
+      <Uranium>40</Uranium>
+      <ComponentSpacer>20</ComponentSpacer>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+		<li>FullHead</li>
+		<li>Legs</li>
+		<li>FrontLeftPaw</li>
+		<li>FrontRightPaw</li>
+		<li>FrontLeftLeg</li>
+		<li>FrontRightLeg</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Animal/Apparel/Body/dogNanoSuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Animal</li>
+        <li>LabradorRetriever</li>
+      </tags>
+		<defaultOutfitTags>
+			<li>Armor</li>
+			<li>Protective</li>
+		</defaultOutfitTags>
+		
+    </apparel>
+	<tradeTags>
+			<li>Armor</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+   <colorGenerator Class="ColorGenerator_Options">
+  <options>
+    <li>
+      <weight>10</weight>
+      <only>(0,1,1,1)</only> <!-- Бирюзовый цвет -->
+    </li>
+    <li>
+      <weight>10</weight>
+      <only>(0.5,0,0.5,1)</only> <!-- Фиолетовый цвет -->
+    </li>
+    <li>
+      <weight>10</weight>
+      <min>(0,0.5,1,1)</min> <!-- Начало градации: голубой -->
+      <max>(0.29,0,0.51,1)</max> <!-- Конец градации: темно-фиолетовый -->
+    </li>
+  </options>
+</colorGenerator>
   </ThingDef>
 
 </Defs>
