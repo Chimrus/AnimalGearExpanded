@@ -53,7 +53,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Animal/Apparel/Body/dogarmorvestwh</wornGraphicPath>
       <layers>
-        <li>OnSkin</li>
+        <li>Shell</li>
       </layers>
       <tags>
         <li>Animal</li>
@@ -147,7 +147,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Animal/Apparel/Body/dogsylo</wornGraphicPath>
       <layers>
-        <li>OnSkin</li>
+        <li>Shell</li>
       </layers>
       <tags>
         <li>Animal</li>
